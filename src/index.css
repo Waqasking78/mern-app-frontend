@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: transparent; /* Scrollbar color */
+  border-radius: 10px;
+}
+
+/* Customize scrollbar */
+.no-scrollbar::-webkit-scrollbar {
+  width: 6px; /* Adjust width */
+}
+
+/* Transparent background */
+.no-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Customize the scrollbar thumb */
+.no-scrollbar::-webkit-scrollbar-thumb {
+  background: white; /* Thumb color */
+  border-radius: 10px;
+}
+
+/* ✅ Hide top and bottom arrows in Webkit browsers */
+.no-scrollbar::-webkit-scrollbar-button {
+  display: none;
+}
+
+/* ✅ Firefox scrollbar fix (transparent background + hidden arrows) */
+.no-scrollbar {
+  scrollbar-width: thin; 
+  scrollbar-color: white transparent;
+}
+@import "tailwindcss";
